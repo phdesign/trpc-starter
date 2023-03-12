@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently --kill-others \"npm:client\" \"npm:server\"",
     "client": "node serve.mjs",
-    "server": "nodemon src/server/index.ts"
+    "server": "nodemon --exec \"ts-node --project src/server/tsconfig.json\" src/server/index.ts"
   },
   "author": "Paul Heasley <paul@phdesign.com.au>",
   "license": "UNLICENSED",
