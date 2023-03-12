@@ -59,5 +59,5 @@ app.use(
 );
 
 app.listen(3000, () =>
-  console.error("server listening on http://localhost:3000/trpc")
+  console.error("TRPC server listening on http://localhost:3000/trpc")
 );

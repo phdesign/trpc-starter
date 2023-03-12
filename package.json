@@ -5,10 +5,9 @@
   "main": "src/app.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently --kill-others \"npm:develop-client\" \"npm:develop-server\"",
-    "develop-client": "esbuild src/index.tsx --servedir=src/public/ --outdir=src/public/js --bundle --sourcemap --watch",
-    "develop-server": "nodemon src/server/index.ts",
-    "serve": "node scripts/serve.mjs"
+    "start": "concurrently --kill-others \"npm:client\" \"npm:server\"",
+    "client": "node serve.mjs",
+    "server": "nodemon src/server/index.ts"
   },
   "author": "Paul Heasley <paul@phdesign.com.au>",
   "license": "UNLICENSED",
