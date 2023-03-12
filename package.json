@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently --kill-others \"npm:develop-client\" \"npm:develop-server\"",
     "develop-client": "esbuild src/index.tsx --servedir=src/public/ --outdir=src/public/js --bundle --sourcemap --watch",
-    "develop-server": "nodemon src/server/index.ts"
+    "develop-server": "nodemon src/server/index.ts",
+    "serve": "node scripts/serve.mjs"
   },
   "author": "Paul Heasley <paul@phdesign.com.au>",
   "license": "UNLICENSED",
@@ -26,6 +27,7 @@
     "nodemon": "^2.0.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
     "ts-node": "^10.9.1",
     "zod": "^3.21.4"
   },
