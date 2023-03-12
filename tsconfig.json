@@ -1,8 +1,4 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "es2017",
-    "strict": true
-  },
-  "exclude": []
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "exclude": ["node_modules", "public"]
 }

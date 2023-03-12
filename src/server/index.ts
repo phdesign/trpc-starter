@@ -1,8 +1,8 @@
 import { inferAsyncReturnType, initTRPC } from "@trpc/server";
 import * as trpcExpress from "@trpc/server/adapters/express";
 import { z } from "zod";
-import * as express from "express";
-import * as cors from "cors";
+import express from "express";
+import cors from "cors";
 
 // created for each request
 const createContext = ({
