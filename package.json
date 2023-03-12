@@ -1,7 +1,7 @@
 {
   "name": "trpc-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple TRPC starter project with esbuild, express and react",
   "main": "src/app.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "server": "nodemon --exec \"ts-node --project src/server/tsconfig.json\" src/server/index.ts"
   },
   "author": "Paul Heasley <paul@phdesign.com.au>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@tanstack/react-query": "^4.26.1",
     "@trpc/client": "^10.15.0",
